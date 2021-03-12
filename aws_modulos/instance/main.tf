@@ -3,18 +3,31 @@ terraform {
         aws = {   
             source = "hashicorp/aws"
         }
-        tls = {   
-            source = "hashicorp/tls"
-        }
     }
 }
-
-provider "tls" {}
 
 provider "aws" {
     region = "eu-west-1"
     profile = "default"
 }
+uenta el
+
+variable "aws_ami_owners" {
+    description = "owners"
+    type = string
+}
+
+variable "aws_ami_" {
+    description = "owners"
+    type = string
+}
+
+variable "aws_ami_owners" {
+    description = "owners"
+    type = string
+}
+
+
 
 // create a key pair
 resource "tls_private_key" "devops_jrmanes" {
